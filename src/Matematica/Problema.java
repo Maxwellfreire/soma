@@ -1,20 +1,25 @@
 package Matematica;
 
+import java.util.Scanner;
+
 public class Problema {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int x,y , soma;
-		
-		
-		System.out.println("Maxwell teste");
-		System.out.println("Freire");
-		
-		x=2;
-		y=3;
-		double resultado = x+y;
-		
-		System.out.println(resultado);
+		Scanner leia = new Scanner(System.in);
+		 //declaração da variavel
+		 double v, a, raio, altura;
+		 
+		 //entrada de dados
+		 System.out.println("Digite o primeiro numero: ");
+		 raio = leia.nextDouble();
+		 System.out.println("Digite o segundo numero: ");
+		 altura = leia.nextDouble();
+		 //processamento
+		 v = 3.1413 * raio * raio * altura;
+		 a = 2*3.1413 * raio *(altura+raio);
+		 //saida de dados
+		 System.out.println("No resultado obter o volume: "+ v + "e a sua area: "+ a);
 		
 
 	}
